@@ -1,5 +1,21 @@
 #pragma once
 
+#include "functions.h"
+
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <chrono>
+#include <stdlib.h>
+
+using namespace std;
+
+enum CodeType {
+    UNKNOWN = 0,
+    G_CODE,
+    M_CODE
+    }; 
+
 class parser
 {
     private:

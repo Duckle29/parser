@@ -1,20 +1,6 @@
 #include "parser.h"
-#include "functions.h"
-
-#include <iostream>
-#include <string>
-#include <cstring>
-#include <chrono>
-#include <stdlib.h>
 
 
-using namespace std;
-
-enum CodeType {
-    UNKNOWN = 0,
-    G_CODE,
-    M_CODE
-    };   
 
 bool parser::is_int(char *input)  // int may contain an initial + or minus and an arbitrary amount of 0s
 {    

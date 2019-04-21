@@ -3,6 +3,7 @@
 #pragma once
 
 using namespace std;
+
 typedef void (*handler)(char *);
 
 handler m_codes[1000];

@@ -14,7 +14,7 @@ int main()
 {
     parser parser;
 
-    assign_codes();
+    
     
 
     char input[256] = "G03 X3.777 Y-11.786 E0.01530";
