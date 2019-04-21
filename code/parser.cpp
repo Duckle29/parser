@@ -1,40 +1,20 @@
 #include "parser.h"
 #include "functions.h"
 
-
 #include <iostream>
 #include <string>
 #include <cstring>
 #include <chrono>
 #include <stdlib.h>
 
+
 using namespace std;
-
-
 
 enum CodeType {
     UNKNOWN = 0,
     G_CODE,
     M_CODE
-    };
-
-    
-typedef void (*handler)(char *);
-
-handler m_codes[1000];
-handler g_codes[1000];
-
-
-
-void parser::assign_codes()
-{
-    for(int i = 0; i < 1000; i++)
-    {
-        g_codes[i] = unknown;
-    }
-    g_codes[1] = G01;
-}
-
+    };   
 
 bool parser::is_int(char *input)  // int may contain an initial + or minus and an arbitrary amount of 0s
 {    
@@ -53,6 +33,7 @@ bool parser::is_int(char *input)  // int may contain an initial + or minus and a
     }    
     return 1;
 }
+
 bool parser::is_float(char *input)
 {   
     bool has_decimal = false;

@@ -3,7 +3,9 @@
 #include <cstring>
 #include <chrono>
 
-#include <D:\Programming\C++\parsing\parser\parser.h>
+#include "parser.h"
+#include "functions.h"
+
 
 using namespace std;
 using namespace std::chrono;
@@ -12,10 +14,10 @@ int main()
 {
     parser parser;
 
-    parser.assign_codes();
+    assign_codes();
     
 
-    char input[256] = "G1 X3.777 Y-11.786 E0.01530";
+    char input[256] = "G03 X3.777 Y-11.786 E0.01530";
     char copy[256];
 
     strncpy(copy, input, 256); 
