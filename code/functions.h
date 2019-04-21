@@ -1,5 +1,3 @@
-#include <iostream>
-
 #pragma once
 
 using namespace std;
@@ -26,7 +24,7 @@ void G02(char* input)
 
 void G03(char* input)
 {
-    cout << "G03: counter-clockwise arc; passed substring: " << input << endl; 
+    cout << "G03: counter-clockwise arc; passed substring: " << input << endl;
 }
 
 void unknown(char* input)

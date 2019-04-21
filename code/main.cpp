@@ -1,28 +1,17 @@
-#include <iostream>
-#include <string>
-#include <cstring>
-#include <chrono>
-
-#include "parser.h"
-#include "functions.h"
-
+#include "main.h"
 
 using namespace std;
-using namespace std::chrono;
 
 int main()
 {
-    parser parser;
-
-    
-    
+    Parser parser;
 
     char input[256] = "G03 X3.777 Y-11.786 E0.01530";
     char copy[256];
 
-    strncpy(copy, input, 256); 
+    strncpy(copy, input, 256);
 
-   
+
     if(parser.parse(input))
     {
         cout << "Successfully parsed input." << endl;
@@ -31,7 +20,7 @@ int main()
     {
         cout << "Error while parsing: Check input string" << endl;
     }
-    
+
 
 
     cout << "done." << endl;
