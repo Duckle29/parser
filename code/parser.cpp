@@ -1,6 +1,9 @@
 #include "parser.h"
 
-Parser::Parser() {}
+Parser::Parser()
+{
+    //assign_codes();
+}
 
 bool Parser::is_int(char *input)  // int may contain an initial + or minus and an arbitrary amount of 0s
 {

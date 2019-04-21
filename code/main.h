@@ -5,6 +5,5 @@
 #include <cstring>
 
 #include "parser.h"
-#include "functions.h"
 
 using namespace std;
