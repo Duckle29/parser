@@ -165,3 +165,8 @@ bool parser::parse(char *input)
         return 0;
     }    
 }
+
+parser::parser()
+{
+    assign_codes();
+}
